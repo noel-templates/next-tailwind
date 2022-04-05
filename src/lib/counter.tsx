@@ -21,24 +21,6 @@
  * SOFTWARE.
  */
 
-// add in Inter and Cantarell
-@import '@fontsource/cantarell/index.css';
-@import '@fontsource/inter/index.css';
+import { useState } from 'react';
 
-// Add in Tailwind utilities
-@tailwind components;
-@tailwind base;
-@tailwind utilities;
-
-// Add some default styles to *
-* {
-  box-sizing: border-box;
-}
-
-html {
-  min-height: 100vh;
-}
-
-body {
-  width: 100%;
-}
+export const useCounter = (): [counter: number, dispatch: (int: number) => void] => useState(0);

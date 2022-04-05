@@ -1,0 +1,53 @@
+{
+  "name": "some_project_name",
+  "description": "{{ PROJECT_DESCRIPTION }}",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Noel <cutie@floofy.dev>",
+  "repository": "{{ PROJECT_REPO_URL }}",
+  "bugs": "{{ PROJECT_ISSUES_URI }}",
+  "keywords": [
+    "{{ SOME KEYWORDS HERE }}"
+  ],
+  "files": [
+    "build",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "lint": "eslint src --ext .ts,.tsx --fix",
+    "dev": "yarn lint && yarn fmt && next dev -p 3621",
+    "fmt": "prettier --config ./.prettierrc.json --write ."
+  },
+  "dependencies": {
+    "@fontsource/cantarell": "4.5.6",
+    "@fontsource/inter": "4.5.7",
+    "@headlessui/react": "1.5.0",
+    "@heroicons/react": "1.0.6",
+    "@react-hook/media-query": "1.1.1",
+    "autoprefixer": "10.4.4",
+    "framer-motion": "6.2.8",
+    "luxon": "2.3.1",
+    "next": "12.1.4",
+    "postcss": "8.4.12",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "1.49.11",
+    "tailwindcss": "3.0.23"
+  },
+  "devDependencies": {
+    "@augu/eslint-config": "2.2.0",
+    "@augu/tsconfig": "1.1.1",
+    "@types/node": "17.0.8",
+    "@types/react": "17.0.43",
+    "@types/tailwindcss": "3.0.10",
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.18.0",
+    "eslint": "8.12.0",
+    "eslint-config-prettier": "8.5.0",
+    "next-sitemap": "2.5.17",
+    "prettier": "2.6.2",
+    "typescript": "4.6.3"
+  }
+}
